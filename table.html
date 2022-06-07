@@ -1,0 +1,113 @@
+<html>
+
+<head bgcolor="292a2d">
+    <script>
+        function myFunction() {
+          // Declare variables
+          var input, caps, ul, li, a, i, txtValue;
+          input = document.getElementById('SearchInput');
+          caps = input.value.toUpperCase();
+          ul = document.getElementById("contents");
+          li = ul.getElementsByTagName('li');
+         
+        
+          for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(caps) > -1) {
+              li[i].style.display = "";
+            } else {
+              li[i].style.display = "none";
+            }
+          }
+        }
+
+    </script>
+  <title>Animated Indian sign language</title>
+  <link rel="icon" href="1.jpeg" type="image/x-icon">
+  <h1 style="font-family: cursive">
+      <center style="color: f3eff5"><img src="2.jpeg" alt="rat picture" width="200" height="200">Computer Graphics and<span style="color:72b01d"> Visualisation</span></center>
+  </h1>
+  <hr>
+  <style>
+      @import url(stylesheet.css);
+      header {
+      background-color: #79b821;
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: black;
+  }
+      nav {
+      float: left;
+      width: 15%;
+      background: #2F3534;
+      height: 2500px;
+      padding-left: 10px;
+  }
+  
+  nav ul {
+      list-style-type: disc;
+      padding: 25px;
+  }
+  #SearchInput {
+color: 72b01d;
+background-position: 10px 12px; 
+background-repeat: no-repeat; 
+width: 90%; 
+font-size: 16px;
+padding: 12px 20px 12px 10px; 
+border: 1px solid #ddd; 
+margin-bottom: 12px;
+}
+
+#contents {
+
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+#contents li a {
+border: 1px solid #ddd; 
+margin-top: -1px;
+background: #2F3534;
+padding: 12px; 
+text-decoration: none;
+font-size: 18px; 
+color:72b01d; 
+display: block; 
+width: 80% ;
+}
+  </style>
+
+
+</head>
+
+<body>
+  <header>
+
+  </header>
+  <nav>
+      
+      <input type="text" id="SearchInput" onkeyup="myFunction()" placeholder="Indian sign language">
+      <ul id="contents">
+        <li><a href="axe.html">Axe</a></li>
+        <li><a href="clam.html">Calm</a></li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="strong.html">Strong</a></li>
+        <li><a href="we.html">We</a></li>
+        </ul><br>
+
+  </nav>
+  <h1>
+      <center>ANIMATED<span style="color: 72b01d"> INDIAN </span>SIGN LANGUAGE</center>
+  </h1>
+  <center><iframe width="560" height="315" src="https://www.youtube.com/embed/mDIHyRJzryM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </center></label>
+  <br>
+
+</body>
+
+</html>
+   
